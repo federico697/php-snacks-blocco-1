@@ -43,4 +43,19 @@ $posts = [
         ]
     ],
 ];
+
+foreach($posts as $keyData => $value){
+    echo $keyData;
+    echo "<br>";
+
+    foreach( $value as $singlePost ){
+        echo $singlePost['title'];
+        echo "<br>";
+        echo $singlePost['author'];
+        echo "<br>";
+        echo $singlePost['text'];
+        echo "<br>";
+    }
+}
+
 ?>
